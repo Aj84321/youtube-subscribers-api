@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adding favicon -->
+  <link rel="icon" href="https://www.youtube.com/s/desktop/dc71232b/img/favicon_144x144.png" sizes="144x144">
+  <!-- title of project -->
+  <title>YouTube Subscribers Page</title>
+  <!-- Adding some CSS -->
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    body {
+      background: #fefefe;
+      height: 97vh;
+      font-size: .8rem;
+
+    }
+
+    hr {
+      color: white;
+    }
+
+    .text {
+      text-align: center;
+      /* color: white; */
+      margin: 20px;
+    }
+
+    .container {
+      margin: 0px 100px;
+    }
+
+    li {
+      margin: 30px;
+      font-size: x-large;
+      line-height: 1.6;
+    }
+
+    .linkedin {
+      /* color: white; */
+    }
+
+    .linkedin:hover {
+      color: blue;
+    }
+
+    .routes {
+      /* color: white; */
+      background-color: burlywood;
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid red;
+    }
+
+    .routes:hover {
+      color: black;
+      background-color: yellowgreen;
+
+    }
+
+    /* Adding media query */
+    @media only screen and (max-width: 768px) {
+      .container {
+        margin: 0px 10px;
+      }
+
+      body {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Home page -->
+  <div class="container">
+    <h1 class="text">Capstone Project <i>  YouTube Subscribers API </i></h1>
+    <hr>
+    <h1 class="text">These are the routes in this API</h1>
+    <hr>
+    <h1 class="text">You can try entering each route using the routes given below</h1>
+    <hr>
+    <!-- Some info about routes -->
+    <ul>
+      <li>Add <a class="routes" target="_blank" href="/channels">/channels</a> in URL : Provides an array of all channels in the database.
+      </li>
+      <li>Add <a class="routes"  target="_blank" href="/channels/names">/channels/names</a> in URL : Provides an array of channels with only two fields name and channel identifier
+      </li>
+      <li>Add <a class="routes"  target="_blank" href="/channels/64480ca582addf25ac622b28">/channels/:id</a> in URL: Provides the
+        details of a channel with the given ID.
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
